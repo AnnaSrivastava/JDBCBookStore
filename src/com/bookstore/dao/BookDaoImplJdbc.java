@@ -4,14 +4,17 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+//import connection factory, entities, Exceptions
 import com.bookstore.dao.factory.DBConnectionFactory;
 import com.bookstore.entities.Book;
 import com.bookstore.exception.DataAccessException;
 import com.bookstore.exception.ResourceNotFoundException;
 
+//class to implement the methods of BookDAO interface
 public class BookDaoImplJdbc implements BookDao {
 	private Connection connection = null;
 
+	
 	public BookDaoImplJdbc() {
 		connection = DBConnectionFactory.getConnection();
 	}

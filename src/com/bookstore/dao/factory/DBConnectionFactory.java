@@ -7,9 +7,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-
+//class to create a connection pool
 public class DBConnectionFactory {
 	private static Connection connection = null;
+	
+	//default constructor
 	private DBConnectionFactory() {
 
 	}
